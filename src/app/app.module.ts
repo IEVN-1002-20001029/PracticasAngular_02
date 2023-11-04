@@ -9,6 +9,9 @@ import { MultiplicacionComponent } from './Practicas/multiplicacion/multiplicaci
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material/material.module';
 import { CinepolisComponent } from './Practicas/cinepolis/cinepolis.component';
+import { MenuComponent } from './menu/menu/menu.component';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
 
 
 
@@ -17,13 +20,17 @@ import { CinepolisComponent } from './Practicas/cinepolis/cinepolis.component';
     AppComponent,
     TemperaturaComponent,
     MultiplicacionComponent,
-    CinepolisComponent
+    CinepolisComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    RouterModule,
+    AppRoutingModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
