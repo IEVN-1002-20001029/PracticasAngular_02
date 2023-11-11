@@ -12,6 +12,11 @@ import { CinepolisComponent } from './Practicas/cinepolis/cinepolis.component';
 import { MenuComponent } from './menu/menu/menu.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+import { DatosPersoanlesComponent } from './Practicas/datos-persoanles/datos-persoanles.component';
+import { ExamenComponent } from './Practicas/examen/examen.component';
+import { ResultadosComponent } from './Practicas/resultados/resultados.component';
+import { DataSharingService } from './data-sharing.service';
+
 
 
 
@@ -21,7 +26,11 @@ import { AppRoutingModule } from './app-routing.module';
     TemperaturaComponent,
     MultiplicacionComponent,
     CinepolisComponent,
-    MenuComponent
+    MenuComponent,
+    DatosPersoanlesComponent,
+    ExamenComponent,
+    ResultadosComponent
+   
   ],
   imports: [
     BrowserModule,
@@ -29,10 +38,16 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserAnimationsModule,
     MaterialModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+
 
   ],
-  providers: [],
+  exports:[
+    DatosPersoanlesComponent,
+    ResultadosComponent
+  ],
+
+  providers: [DataSharingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

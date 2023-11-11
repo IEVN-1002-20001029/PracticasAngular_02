@@ -1,0 +1,112 @@
+
+<div class="container">
+    <h1 class="text-center m-3">Datos personales</h1>
+    <div>
+
+            <div class="row  justify-content-center">
+            <div class="col-4 justify-content-center d-flex ">
+              <h3>Nombre</h3>
+            </div>
+            <div class="col-4">
+              <input  [(ngModel)]="nombre" type="text">
+            </div>
+          </div>
+          <div class="row  justify-content-center">
+            <div class="col-4 justify-content-center d-flex">
+              <h3>Apaterno</h3>
+            </div>
+            <div class="col-4">
+              <input  [(ngModel)]="Apaterno" type="text">
+            </div>
+          </div>
+          <div class="row  justify-content-center">
+            <div class="col-4 justify-content-center d-flex ">
+              <h3>Amaterno</h3>
+            </div>
+            <div class="col-4">
+              <input  [(ngModel)]="Amaterno" type="text">
+            </div>
+          </div>
+
+          <div class="row">
+            <h1 class="text-center m-3">Fecha de nacimiento</h1>
+          </div> 
+          
+    </div>
+
+    
+    
+
+    <div class="justify-content-between d-flex">
+        <div class="col-2 ">
+            <div class="">
+                <h3 class="text-center">Día</h3>
+            </div>
+            <div class="justify-content-center d-flex ">
+                <input  [(ngModel)]="day" type="number">
+              </div>
+        </div>
+
+        <div class="col-2 ">
+            <div class=" text-center">
+                <h3>Mes</h3>
+            </div>
+            <div class="justify-content-center d-flex ">
+                <input  [(ngModel)]="month" type="number">
+              </div>
+        </div>
+
+        <div class="col-2">
+            <div class="text-center">
+                <h3>Año</h3>
+            </div>
+            <div class="justify-content-center d-flex">
+                <input  [(ngModel)]="year" type="number">
+              </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="row col-4 m-3">
+        <h1>Sexo</h1>
+
+ 
+
+    </div>
+    <div class="col-4 justify-content-between  ">
+      <div class="row">
+        <div class="col-1 ">
+            <input type="radio" value="1"  [(ngModel)]="rb" name="opi">
+        </div>
+        <div class="col-3 ">
+            <h2>Masculino</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-1 ">
+            <input type="radio" value="2"  [(ngModel)]="rb" name="opi">
+        </div>
+        <div class="col-4">
+            <h2>Femenino</h2>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="justify-content-center d-flex" >
+        <button (click)="limpiar()"  class="btn btn-danger m-4">Limpiar</button>
+        <button (click)="siguiente()"  class="btn btn-info m-4">Siguiente</button>
+      
+    </div>
+
+    
+<div>
+  <router-outlet>  </router-outlet>
+</div>
+
+
+</div>

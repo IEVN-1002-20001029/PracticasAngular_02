@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DatosPersoanlesComponent } from 'src/app/Practicas/datos-persoanles/datos-persoanles.component';
 
 @Component({
   selector: 'app-menu',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent {
+
+ 
 
 }

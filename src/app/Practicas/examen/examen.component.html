@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Matemáticas</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+  <h2>Prueba de Matemáticas</h2>
+  <form>
+   
+    <!-- Pregunta 1 -->
+    <div class="form-group mt-2" style="border: 1px solid black;">
+      <label >Pregunta 1: ¿Cuánto es 2 + 2?</label>
+      <div class="d-flex justify-content-around">
+        <div class="form-check ">
+            <input class="form-check-input" type="radio"  value="2"  [(ngModel)]="p1"  name="pregunta1"  required>
+            <label class="form-check-label">a) 3</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" value="1"  [(ngModel)]="p1"  name="pregunta1" required>
+            <label class="form-check-label">b) 4</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" value="3"  [(ngModel)]="p1"  name="pregunta1"  required>
+            <label class="form-check-label">c) 5</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" value="4"  [(ngModel)]="p1"  name="pregunta1" required>
+            <label class="form-check-label">d) 6</label>
+          </div>
+      </div>
+    
+    </div>
+
+    <!-- Pregunta 2 -->
+<div class="form-group mt-2" style="border: 1px solid black;">
+    <label>Pregunta 2: ¿Cuánto es 5 * 3?</label>
+    <div class="d-flex justify-content-around">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" value="2"  [(ngModel)]="p2" name="pregunta2" required>
+        <label class="form-check-label">a) 8</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" value="3"  [(ngModel)]="p2" name="pregunta2"  required>
+        <label class="form-check-label">b) 10</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" value="1"  [(ngModel)]="p2" name="pregunta2"  required>
+        <label class="form-check-label">c) 15</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" value="4"  [(ngModel)]="p2" name="pregunta2" required>
+        <label class="form-check-label">d) 20</label>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Pregunta 3 -->
+  <div class="form-group mt-2" style="border: 1px solid black;">
+    <label>Pregunta 3: ¿Cuánto es 8 / 2?</label>
+    <div class="d-flex justify-content-around">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" value="2"  [(ngModel)]="p3"  name="pregunta3" required>
+        <label class="form-check-label">a) 2</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" value="1"  [(ngModel)]="p3"  name="pregunta3"  required>
+        <label class="form-check-label">b) 4</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" value="3"  [(ngModel)]="p3" name="pregunta3"  required>
+        <label class="form-check-label">c) 6</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" value="4"  [(ngModel)]="p3" name="pregunta3" required>
+        <label class="form-check-label">d) 8</label>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Pregunta 4 -->
+  <div class="form-group mt-2" style="border: 1px solid black;">
+    <label>Pregunta 4: ¿Cuánto es 4 - 1?</label>
+    <div class="d-flex justify-content-around">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" value="2"  [(ngModel)]="p4" name="pregunta4"  required>
+        <label class="form-check-label">a) 1</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" value="3"  [(ngModel)]="p4" name="pregunta4"  required>
+        <label class="form-check-label">b) 2</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio"  value="1"  [(ngModel)]="p4" name="pregunta4"  required>
+        <label class="form-check-label">c) 3</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" value="4"  [(ngModel)]="p4" name="pregunta4"  required>
+        <label class="form-check-label">d) 4</label>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Pregunta 5 -->
+<div class="form-group mt-2" style="border: 1px solid black;">
+    <label>Pregunta 5: ¿Cuánto es 6 * 2?</label>
+    <div class="d-flex justify-content-around">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="pregunta5" value="2"  [(ngModel)]="p5" required>
+        <label class="form-check-label">a) 8</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="pregunta5" value="3"  [(ngModel)]="p5" required>
+        <label class="form-check-label">b) 10</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="pregunta5" value="1"  [(ngModel)]="p5"  required>
+        <label class="form-check-label">c) 12</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="pregunta5" value="4"  [(ngModel)]="p5" required>
+        <label class="form-check-label">d) 14</label>
+      </div>
+    </div>
+  </div>
+  
+  
+
+    <!-- Botón de Enviar -->
+    <button (click)="Respuestas()" type="submit" class="btn btn-primary">Enviar Respuestas</button>
+  </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
